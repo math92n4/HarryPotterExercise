@@ -12,7 +12,7 @@ public class Main {
         Person draco = new Person("Draco","Malfoy");
         Person neville = new Person("Neville","Longbottom");
 
-        Person[] persons = {harry,ron,hermione,ginny,draco};
+        Person[] persons = {harry,ron,hermione,ginny,draco,neville};
 
         harry.addPoints(100);
         ron.addPoints(231);
@@ -34,6 +34,7 @@ public class Main {
         persons[2] = ron;
         persons[3] = hermione;
         persons[4] = neville;
+        persons[5] = draco;
 
         System.out.println("---------------\nARRAY:");
 
