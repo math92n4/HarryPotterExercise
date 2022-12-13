@@ -9,24 +9,28 @@ public class Main {
         Person ron = new Person("Ron","Weasley");
         Person hermione = new Person("Hermione","Granger");
         Person ginny = new Person("Ginny","Weasley");
+        Person draco = new Person("Draco","Malfoy");
 
-        Person[] persons = {harry,ron,hermione,ginny};
+        Person[] persons = {harry,ron,hermione,ginny,draco};
 
-        harry.setPoint(100);
-        ron.setPoint(231);
-        hermione.setPoint(420);
-        ginny.setPoint(1000);
+        harry.addPoints(100);
+        ron.addPoints(231);
+        hermione.addPoints(420);
+        ginny.addPoints(1000);
+        draco.addPoints(215);
 
         System.out.println("REGULAR PRINT:");
         System.out.println(harry);
         System.out.println(ron);
         System.out.println(hermione);
         System.out.println(ginny);
+        System.out.println(draco);
 
         persons[0] = harry;
         persons[1] = ginny;
         persons[2] = ron;
         persons[3] = hermione;
+        persons[4] = draco;
 
         System.out.println("---------------\nARRAY:");
 
