@@ -7,9 +7,9 @@ public class Main {
         Person ron = new Person("Ron","Weasley");
         Person hermione = new Person("Hermione","Granger");
 
-        harry.addPoints(100);
-        ron.addPoints(231);
-        hermione.addPoints(420);
+        harry.setPoint(100);
+        ron.setPoint(231);
+        hermione.setPoint(420);
 
         System.out.println(harry);
         System.out.println(ron);
