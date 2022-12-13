@@ -5,6 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        LoopMetoder loopMetoder = new LoopMetoder();
         Person harry = new Person("Harry","Potter");
         Person ron = new Person("Ron","Weasley");
         Person hermione = new Person("Hermione","Granger");
@@ -45,6 +46,11 @@ public class Main {
         for (int i=0; i<persons.length; i++) {
             System.out.println(Arrays.toString((persons)));
         }
+
+        System.out.println("---------------\nTOTAL CALCULATED POINTS:");
+        System.out.println(loopMetoder.calculateTotalPoints(persons));
+
+
 
 
     }
