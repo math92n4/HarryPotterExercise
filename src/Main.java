@@ -27,6 +27,7 @@ public class Main {
         System.out.println(hermione);
         System.out.println(ginny);
         System.out.println(draco);
+        System.out.println(neville);
 
         persons[0] = harry;
         persons[1] = ginny;
