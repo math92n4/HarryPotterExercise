@@ -44,4 +44,10 @@ public class Person {
         return firstName + " " + lastName + " has " + point + " point";
     }
 
+    //add point method
+
+    public void addPoints(int point) {
+        this.point += point;
+    }
+
 }
