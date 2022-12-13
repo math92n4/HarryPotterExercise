@@ -10,6 +10,7 @@ public class Main {
         Person hermione = new Person("Hermione","Granger");
         Person ginny = new Person("Ginny","Weasley");
         Person draco = new Person("Draco","Malfoy");
+        Person neville = new Person("Neville","Longbottom");
 
         Person[] persons = {harry,ron,hermione,ginny,draco};
 
@@ -18,6 +19,7 @@ public class Main {
         hermione.addPoints(420);
         ginny.addPoints(1000);
         draco.addPoints(215);
+        neville.addPoints(7);
 
         System.out.println("REGULAR PRINT:");
         System.out.println(harry);
@@ -30,7 +32,7 @@ public class Main {
         persons[1] = ginny;
         persons[2] = ron;
         persons[3] = hermione;
-        persons[4] = draco;
+        persons[4] = neville;
 
         System.out.println("---------------\nARRAY:");
 
