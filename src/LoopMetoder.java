@@ -12,23 +12,19 @@ public class LoopMetoder {
     }
 
     public Person findMinimum(ArrayList<Person> persons) {
-        Person personWithMin = null;
-        int minNumber = Integer.MAX_VALUE;
+        Person personWithMin = persons.get(0);
         for (Person person : persons) {
-            if (person.getPoint() < minNumber)
+            if (person.getPoint() < personWithMin.getPoint())
             personWithMin = person;
-            minNumber = person.getPoint();
         }
         return personWithMin;
     }
 
     public Person findMaximum(ArrayList<Person> persons) {
-        Person personWithMax = null;
-        int maxNumber = Integer.MIN_VALUE;
+        Person personWithMax = persons.get(0);
         for (Person person : persons) {
-            if (person.getPoint() > maxNumber) {
+            if (person.getPoint() > personWithMax.getPoint()) {
                 personWithMax = person;
-                maxNumber = person.getPoint();
             }
         }
         return personWithMax;
