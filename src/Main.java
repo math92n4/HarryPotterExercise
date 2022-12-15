@@ -50,6 +50,22 @@ public class Main {
         System.out.println("---------------\nTOTAL CALCULATED POINTS:");
         System.out.println(loopMetoder.calculateTotalPoints(persons));
 
+        System.out.println("---------------\nPERSON WITH MIN POINTS:");
+        System.out.println(loopMetoder.findMinimum(persons));
+
+        System.out.println("---------------\nPERSON WITH MAX POINTS:");
+        System.out.println(loopMetoder.findMaximum(persons));
+
+        System.out.println("---------------\nAVG POINTS:");
+        System.out.println(loopMetoder.calculateAverage(persons));
+
+        System.out.println("---------------\nFIND FIRSTNAME IN LIST:");
+        System.out.println(loopMetoder.findByFirstName(persons,"ginny"));
+
+        System.out.println("---------------\nFIND LASTNAME IN LIST:");
+        System.out.println(loopMetoder.findByLastName(persons,"potter"));
+
+
 
 
 
