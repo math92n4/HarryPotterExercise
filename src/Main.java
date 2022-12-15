@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -5,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        ArrayList<Person> persons = new ArrayList<>();
         LoopMetoder loopMetoder = new LoopMetoder();
         Person harry = new Person("Harry","Potter");
         Person ron = new Person("Ron","Weasley");
@@ -13,7 +15,12 @@ public class Main {
         Person draco = new Person("Draco","Malfoy");
         Person neville = new Person("Neville","Longbottom");
 
-        Person[] persons = {harry,ron,hermione,ginny,draco,neville};
+        persons.add(harry);
+        persons.add(ron);
+        persons.add(hermione);
+        persons.add(ginny);
+        persons.add(draco);
+        persons.add(neville);
 
         harry.addPoints(100);
         ron.addPoints(231);
@@ -30,21 +37,21 @@ public class Main {
         System.out.println(draco);
         System.out.println(neville);
 
-        persons[0] = harry;
-        persons[1] = ginny;
-        persons[2] = ron;
-        persons[3] = hermione;
-        persons[4] = neville;
-        persons[5] = draco;
+        persons.set(0, harry);
+        persons.set(1, ginny);
+        persons.set(2, ron);
+        persons.set(3, hermione);
+        persons.set(4, neville);
+        persons.set(5, draco);
 
         System.out.println("---------------\nARRAY:");
 
-        System.out.println(Arrays.toString(persons));
+        System.out.println(persons);
 
         System.out.println("---------------\nENHANCED FOR LOOP:");
 
-        for (int i=0; i<persons.length; i++) {
-            System.out.println(Arrays.toString((persons)));
+        for (int i=0; i<persons.size(); i++) {
+            System.out.println(persons);
         }
 
         System.out.println("---------------\nTOTAL CALCULATED POINTS:");

@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class LoopMetoder {
 
-    public int calculateTotalPoints(Person[] persons) {
+    public int calculateTotalPoints(ArrayList<Person> persons) {
         int total = 0;
         for (Person person : persons) {
             total += person.getPoint();
@@ -8,7 +11,7 @@ public class LoopMetoder {
         return total;
     }
 
-    public Person findMinimum(Person[] persons) {
+    public Person findMinimum(ArrayList<Person> persons) {
         Person personWithMin = null;
         int minNumber = Integer.MAX_VALUE;
         for (Person person : persons) {
@@ -19,7 +22,7 @@ public class LoopMetoder {
         return personWithMin;
     }
 
-    public Person findMaximum(Person[] persons) {
+    public Person findMaximum(ArrayList<Person> persons) {
         Person personWithMax = null;
         int maxNumber = Integer.MIN_VALUE;
         for (Person person : persons) {
@@ -31,12 +34,12 @@ public class LoopMetoder {
         return personWithMax;
     }
 
-    public double calculateAverage(Person[] persons) {
-        double avg = calculateTotalPoints(persons) / persons.length;
+    public double calculateAverage(ArrayList<Person> persons) {
+        double avg = calculateTotalPoints(persons) / persons.size();
         return avg;
     }
 
-    public Person findByFirstName(Person[] persons,String firstName) {
+    public Person findByFirstName(ArrayList<Person> persons,String firstName) {
         for (Person person : persons) {
             if (person.getFirstName().equalsIgnoreCase(firstName)) {
                 return person;
@@ -45,7 +48,7 @@ public class LoopMetoder {
         return null;
     }
 
-    public Person findByLastName(Person[] persons,String lastName) {
+    public Person findByLastName(ArrayList<Person> persons,String lastName) {
         for (Person person : persons) {
             if (person.getLastName().equalsIgnoreCase(lastName)) {
                 return person;
